@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="utillib-1.1-unspecified">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/439c655f82fc6fc30fc5e0d2ba806e5c9331a595/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/439c655f82fc6fc30fc5e0d2ba806e5c9331a595/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
