@@ -1,8 +1,14 @@
-# UtilLib
+ <a href='https://bintray.com/vinay/android/UtilLib?source=watch' alt='Get automatic notifications about new "UtilLib" versions'><img src='https://www.bintray.com/docs/images/bintray_badge_color.png'></a> 
+ # UtilLib [ ![Download](https://api.bintray.com/packages/vinay/android/UtilLib/images/download.svg) ](https://bintray.com/vinay/android/UtilLib/_latestVersion)
+
 Library contains Location, Run time Permission, Image chooser in Android Project
 
-AAR File
-https://github.com/VinayRathod/UtilLib/raw/master/utillib-1.1/utillib-1.1.aar
+add a dependency in your application build.gradle file like this
+``` 
+dependencies {
+    implementation "com.yudiz:vinay-utillib:{LATEST_VERSION}"
+}
+```
 
 
 dialog with camera and gallery
@@ -20,7 +26,7 @@ UtilLib.getPhoto(mContext, ChooseType.REQUEST_ANY)
 
 Runtime Permission
 ```
-UtilLib.getPermission(mContext, new String[]{ Manifest.permission.CAMERA }, 12)
+UtilLib.getPermission(mContext, new String[]{ Manifest.permission.CAMERA })
     .enqueue(new PermissionResultCallback() {
         @Override
         public void onComplete(PermissionResponse permissionResponse) {
@@ -32,10 +38,6 @@ UtilLib.getPermission(mContext, new String[]{ Manifest.permission.CAMERA }, 12)
 get location from either GPS or Network
 ```
 UtilLib.getLocationManager(mContext).getLocation(new OnLocationPickListener() {
-    @Override
-    public void getLastLocation(Location location) {
-        Log.d("Tag", "lng:" + location.getLongitude() + " lat:" + location.getLatitude());
-    }
 
     @Override
     public void onLocationChanged(Location location) {
@@ -49,4 +51,4 @@ UtilLib.getLocationManager(mContext).getLocation(new OnLocationPickListener() {
 });
 ```
 
-[![Analytics](https://ga-beacon.appspot.com/UA-136409797-3/VinayRathod/UtilLib)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-136409797-3/VinayRathod/UtilLib)](https://github.com/VinayRathod)
